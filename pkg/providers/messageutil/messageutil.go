@@ -34,8 +34,5 @@ func FilterInvalidHistoryMessages(history []protocoltypes.Message) []protocoltyp
 		}
 		filtered = append(filtered, msg)
 	}
-	if filtered == nil {
-		return []protocoltypes.Message{}
-	}
 	return filtered
 }
